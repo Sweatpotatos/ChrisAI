@@ -1,1 +1,5 @@
 # ChrisAI
+
+In developing this web API chat application, I integrated smartphone-like features and SnapChat-inspired design for an enhanced user experience. I used a bright yellow background and styled the chat interface to resemble a smartphone screen, with a familiar text input bar and a blue send button. User messages appear in green bubbles, while chatbot responses are in gray, similar to SnapChat’s conversation style.
+
+The application is responsive, working seamlessly across devices. I maintained a clean, minimalistic look, focusing on user interaction. An emoji icon next to the text input bar allows for expressive messaging. The chatbot provides instant, automated responses, simulating natural conversation flow. For example, when asked about "Harry Potter," it gives relevant information. The chatbot starts with Personality Feature in "Humor" that could be edited if you like to, and will greeting to engage users, integrated name for the bot, his name will be Chris, I call him Bot Chris. By combining smartphone features with SnapChat aesthetics, I created a visually appealing and user-friendly chat application.
