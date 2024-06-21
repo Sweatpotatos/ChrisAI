@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #fffc00, #fff200);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+header input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.phone {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+    border-radius: 36px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-header {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.camera {
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+}
+
+.speaker {
+    width: 60px;
+    height: 6px;
+    background: #333;
+    border-radius: 6px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 36px 36px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background: #fffc00;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow: hidden; /* Ensure overflow is hidden in the main area */
+}
+
+#output {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    scroll-behavior: smooth;
+    max-height: calc(100vh - 160px); /* Adjust based on your layout */
+}
+
+.message {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 20px;
+    word-wrap: break-word;
+    display: block;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+.message.client {
+    background: #d1ffd6;
+    align-self: flex-end;
+    text-align: left;
+    border-top-right-radius: 0;
+    margin-left: auto;
+    max-width: fit-content;
+}
+
+.message.bot {
+    background: #e0e0e0;
+    align-self: flex-start;
+    text-align: left;
+    border-top-left-radius: 0;
+    margin-right: auto;
+}
+
+.typing-indicator {
+    font-size: 12px;
+    color: #888;
+    margin: 5px 0;
+    align-self: flex-start;
+}
+
+#inputContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#fileButton {
+    padding: 10px;
+    color: white;
+    background-color: #007aff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fileButton:hover {
+    background-color: #005bb5;
+}
+
+textarea {
+    width: calc(100% - 90px);
+    margin: 0 10px 0 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    height: 40px; /* Adjust as needed */
+}
+
+#emojiButton {
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#buttonContainer {
+    text-align: right;
+    padding: 10px;
+    background: #fffc00;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007aff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#emojiPicker {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1000;
+}

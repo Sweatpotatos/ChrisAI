@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Core ChatBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji-mart@latest/css/emoji-mart.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="phone-header">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+        </div>
+        <div class="container">
+            <header>
+                <input type="text" id="topicInput" placeholder="Topic with Chris...">
+            </header>
+            <main>
+                <div id="output"></div>
+                <div id="inputContainer">
+                    <input type="file" id="fileInput" accept=".pdf,.txt" hidden />
+                    <button id="fileButton"><strong>&#128194;</strong></button>
+                    <textarea id="inputText" placeholder="Hi Chris..."></textarea>
+                    <button id="emojiButton">😀</button>
+                </div>
+                <div id="buttonContainer">
+                    <button id="submitButton"><strong>&#x2b90;</strong> Send</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="emojiPicker" style="display:none; position:absolute;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/emoji-mart.js"></script>
+    <script src="script-basic.js"></script>
+</body>
+</html>
