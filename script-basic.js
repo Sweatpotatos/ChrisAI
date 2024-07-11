@@ -51,7 +51,7 @@ async function generateResponse() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer sk-proj-120SacAQjM0SgfRh04BCT3BlbkFJYgfvWVnPdsLh9QPfJ4OK'
+                    'Authorization': 'Bearer sk-proj-ow8hsZnbLHkOp7G42gclT3BlbkFJQbjFkCOKQ4GKFyqaOLKw'
                 },
                 body: JSON.stringify({
                     model: 'gpt-4',
